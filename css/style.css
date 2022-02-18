@@ -1,0 +1,196 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family:Helvetica, sans-serif;
+  margin: 0;
+
+}
+
+body > div{
+  padding: 0;
+  
+}
+
+*{
+  outline: 1px solid red;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+h1{
+  font-size: 25px;
+}
+h3{
+  font-size: 18px;
+}
+h4{
+  font-size: 13px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+  background: black;
+  padding: 2px;
+  float: left;
+  width: 100%;
+
+}
+
+.navbar{
+  background: black;
+  padding: 2px;
+  float: left;
+  
+  
+}
+
+
+.navbar *{
+  width: 7%;
+  float: left;
+  align-content: center;
+}
+
+.navbar img, .navbar input{
+  width: 100%;
+  height: auto;
+  
+}
+
+.navbar ul{
+  float: left;
+  width: 76%;
+  padding: 50;
+  margin: 0;
+}
+
+.navbar li{
+  width: 10%;
+  /* margin: 0; */
+}
+
+.navbar li > a{
+  border: 0 1px solid white;
+  width: 100%;
+  color: white;
+}
+
+.navbar > div a{
+  width: 100%;
+}
+
+.nav-search{
+}
+
+.content{
+  clear: left;
+  margin: 0;
+  padding: 0;
+  
+}
+
+main{
+  height: 40vh;
+  margin: 20px;
+}
+
+main *{
+  float: left;
+  width: 50%;
+ }
+
+.main-top-story *{
+  float: left;
+  width: 100%;
+  margin: 0;
+  
+  
+}
+
+.main-top-story{
+  background: url('../images/israeli.jpg');
+  background-position: inherit;
+  background-size: cover;
+  height: 294px;
+}
+
+main h2 + h2{
+  text-align: right;
+  color: grey;
+}
+
+.main-top-story{
+  
+}
+
+.main-headlines *{
+  float: left;
+  width: 100%;
+  margin: 0;
+
+}
+
+.main-headlines{
+  background: url('../images/online.png');
+  background-position: inherit;
+  background-size: cover;
+  height: 145px;
+}
+
+article{
+  float: left;
+  width: 100%;
+  margin: 50px 20px;
+  
+}
+
+article section{
+  float: left;
+  width: 33.3333%;
+  height: 250px;
+}
+
+article img{
+  width: 100%
+}
+
+article section *{
+  margin: 0;
+}
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
